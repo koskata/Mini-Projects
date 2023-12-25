@@ -17,7 +17,7 @@ namespace CashApp
     public partial class ChangeData : Form
     {
 
-        private static decimal balance;
+        //private static decimal balance;
 
         CalculatorContext context;
 
@@ -31,7 +31,7 @@ namespace CashApp
 
             context = new CalculatorContext();
 
-            balance = context.Calculators.Sum(x => x.СумаЗаМесеца);
+            //balance = context.Calculators.Sum(x => x.СумаЗаМесеца);
 
             label2.Visible = false;
             Schoolarship.Visible = false;
@@ -72,12 +72,7 @@ namespace CashApp
 
                 Calculator tableToUpdate;
 
-
             }
-
-
-
-
 
         }
 
@@ -99,14 +94,42 @@ namespace CashApp
             if (newSt < tableToFind.Стипендия)
             {
                 temp = tableToFind.СумаЗаМесеца - (newSt + tableToFind.Транспортни);
-                balance -= temp;
+                //balance -= temp;
                 tableToFind.СумаЗаМесеца -= temp;
+
+                List<Balance> list = new List<Balance>();
+
+                foreach (var balance in context.Balances)
+                {
+                    list.Add(balance);
+                }
+
+                var balanceLast = list[list.Count - 1];
+
+                context.Balances.Add(new Balance()
+                {
+                    LastBalance = balanceLast.LastBalance - temp
+                });
             }
             else
             {
                 temp = (newSt + tableToFind.Транспортни) - tableToFind.СумаЗаМесеца;
-                balance += temp;
+                //balance += temp;
                 tableToFind.СумаЗаМесеца += temp;
+
+                List<Balance> list = new List<Balance>();
+
+                foreach (var balance in context.Balances)
+                {
+                    list.Add(balance);
+                }
+
+                var balanceLast = list[list.Count - 1];
+
+                context.Balances.Add(new Balance()
+                {
+                    LastBalance = balanceLast.LastBalance + temp
+                });
             }
 
             context.SaveChanges();
@@ -131,14 +154,42 @@ namespace CashApp
             if (newTs < tableToFind.Транспортни)
             {
                 temp = tableToFind.СумаЗаМесеца - (newTs + tableToFind.Стипендия);
-                balance -= temp;
+                //balance -= temp;
                 tableToFind.СумаЗаМесеца -= temp;
+
+                List<Balance> list = new List<Balance>();
+
+                foreach (var balance in context.Balances)
+                {
+                    list.Add(balance);
+                }
+
+                var balanceLast = list[list.Count - 1];
+
+                context.Balances.Add(new Balance()
+                {
+                    LastBalance = balanceLast.LastBalance - temp
+                });
             }
             else
             {
                 temp = (newTs + tableToFind.Стипендия) - tableToFind.СумаЗаМесеца;
-                balance += temp;
+                //balance += temp;
                 tableToFind.СумаЗаМесеца += temp;
+
+                List<Balance> list = new List<Balance>();
+
+                foreach (var balance in context.Balances)
+                {
+                    list.Add(balance);
+                }
+
+                var balanceLast = list[list.Count - 1];
+
+                context.Balances.Add(new Balance()
+                {
+                    LastBalance = balanceLast.LastBalance + temp
+                });
             }
 
             context.SaveChanges();

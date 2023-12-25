@@ -103,6 +103,7 @@
             // 
             // button1
             // 
+            button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(286, 377);
             button1.Name = "button1";
@@ -114,6 +115,7 @@
             // 
             // Enter
             // 
+            Enter.Cursor = Cursors.Hand;
             Enter.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Enter.Location = new Point(286, 100);
             Enter.Name = "Enter";

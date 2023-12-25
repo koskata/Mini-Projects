@@ -41,6 +41,7 @@
             // 
             // Enter
             // 
+            Enter.Cursor = Cursors.Hand;
             Enter.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Enter.Location = new Point(290, 91);
             Enter.Name = "Enter";
@@ -81,6 +82,7 @@
             // 
             // Schoolarship
             // 
+            Schoolarship.Cursor = Cursors.Hand;
             Schoolarship.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             Schoolarship.Location = new Point(36, 281);
             Schoolarship.Name = "Schoolarship";
@@ -102,6 +104,7 @@
             // 
             // Transport
             // 
+            Transport.Cursor = Cursors.Hand;
             Transport.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             Transport.Location = new Point(441, 281);
             Transport.Name = "Transport";

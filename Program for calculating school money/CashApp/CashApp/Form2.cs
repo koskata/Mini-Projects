@@ -19,7 +19,7 @@ namespace CashApp
 
         int counter;
 
-        private static decimal balance;
+        //private static decimal balance;
 
         CalculatorContext context;
 
@@ -30,7 +30,7 @@ namespace CashApp
 
             context = new CalculatorContext();
 
-            balance = context.Calculators.Sum(x => x.СумаЗаМесеца);
+            //balance = context.Calculators.Sum(x => x.СумаЗаМесеца);
 
             label2.Visible = false;
             textBox2.Visible = false;
@@ -71,7 +71,7 @@ namespace CashApp
                 textBox2.Focus();
             }
 
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -125,8 +125,35 @@ namespace CashApp
 
         private static string AddingRecord(CalculatorContext context, string month, decimal scholarship, decimal transportMoney)
         {
+            if (context.Calculators.Count() == 0)
+            {
+                context.Balances.Add(new Balance()
+                {
+                    LastBalance = scholarship + transportMoney
+                });
+            }
+            else
+            {
+                //int indexLastBalance = context.Balances.Max(x => x.Id);
+                //var balanceLast = context.Balances.ElementAt(indexLastBalance).LastBalance;
 
-            balance += scholarship + transportMoney;
+                List<Balance> list = new List<Balance>();
+
+                foreach (var balance in context.Balances)
+                {
+                    list.Add(balance);
+                }
+
+                var balanceLast = list[list.Count - 1];
+
+                context.Balances.Add(new Balance()
+                {
+                    LastBalance = balanceLast.LastBalance + (scholarship + transportMoney)
+                });
+            }
+
+
+            //balance += scholarship + transportMoney;
 
 
             var calculatorToAdd = new Calculator()

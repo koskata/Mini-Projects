@@ -21,6 +21,8 @@
 
         public DbSet<Calculator> Calculators { get; set; }
 
+        public DbSet<Balance> Balances { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

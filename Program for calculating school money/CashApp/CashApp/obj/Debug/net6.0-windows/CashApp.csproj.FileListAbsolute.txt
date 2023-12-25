@@ -51,3 +51,4 @@ D:\Projects\Program for calculating school money\CashApp\CashApp\obj\Debug\net6.
 D:\Projects\Program for calculating school money\CashApp\CashApp\obj\Debug\net6.0-windows\CashApp.Form2.resources
 D:\Projects\Program for calculating school money\CashApp\CashApp\obj\Debug\net6.0-windows\CashApp.ChangeData.resources
 D:\Projects\Program for calculating school money\CashApp\CashApp\obj\Debug\net6.0-windows\CashApp.BalanceForm.resources
+D:\Projects\Program for calculating school money\CashApp\CashApp\obj\Debug\net6.0-windows\CashApp.ТranslatingMoneyForm.resources

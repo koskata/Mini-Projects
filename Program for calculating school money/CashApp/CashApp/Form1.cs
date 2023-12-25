@@ -32,5 +32,11 @@ namespace CashApp
 
             form4.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ÒranslatingMoneyForm translatingMoneyForm = new();
+            translatingMoneyForm.Show();
+        }
     }
 }

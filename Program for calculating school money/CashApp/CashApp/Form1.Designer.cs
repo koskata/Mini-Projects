@@ -32,6 +32,8 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -46,6 +48,7 @@
             // 
             // button1
             // 
+            button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             button1.Location = new Point(12, 159);
             button1.Name = "button1";
@@ -57,6 +60,7 @@
             // 
             // button2
             // 
+            button2.Cursor = Cursors.Hand;
             button2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             button2.Location = new Point(292, 159);
             button2.Name = "button2";
@@ -68,6 +72,7 @@
             // 
             // button3
             // 
+            button3.Cursor = Cursors.Hand;
             button3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             button3.Location = new Point(564, 159);
             button3.Name = "button3";
@@ -77,11 +82,38 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(128, 255, 128);
+            button4.Cursor = Cursors.Hand;
+            button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button4.Location = new Point(320, 290);
+            button4.Name = "button4";
+            button4.Size = new Size(159, 57);
+            button4.TabIndex = 4;
+            button4.Text = "Превеждане на пари в картата";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.FromArgb(255, 128, 128);
+            button5.Cursor = Cursors.Hand;
+            button5.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button5.Location = new Point(320, 353);
+            button5.Name = "button5";
+            button5.Size = new Size(159, 57);
+            button5.TabIndex = 5;
+            button5.Text = "Плащане";
+            button5.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button5);
+            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -99,5 +131,7 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private Button button4;
+        private Button button5;
     }
 }

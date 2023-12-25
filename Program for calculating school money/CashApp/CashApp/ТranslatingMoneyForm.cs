@@ -14,27 +14,22 @@ using CashApp.Data.Models;
 
 namespace CashApp
 {
-    public partial class BalanceForm : Form
+    public partial class ТranslatingMoneyForm : Form
     {
-        //private static decimal balance;
 
         CalculatorContext context;
-
-        public BalanceForm()
+        public ТranslatingMoneyForm()
         {
             InitializeComponent();
 
             context = new CalculatorContext();
 
-            //balance = context.Calculators.Sum(x => x.СумаЗаМесеца);
-
             label2.Visible = false;
-            progressBar1.Visible = false;
-
-
+            textBox2.Visible = false;
+            button2.Visible = false;
         }
 
-        private void BalanceForm_Load(object sender, EventArgs e)
+        private void ТranslatingMoneyForm_Load(object sender, EventArgs e)
         {
 
         }
@@ -44,12 +39,24 @@ namespace CashApp
             if (textBox1.Text == "1234")
             {
                 label2.Visible = true;
-                progressBar1.Visible = true;
+                textBox2.Visible = true;
+                button2.Visible = true;
 
                 label1.Visible = false;
                 textBox1.Visible = false;
                 button1.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show($"Грешен ПИН!");
+            }
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (decimal.Parse(textBox2.Text) >= 0)
+            {
                 List<Balance> list = new List<Balance>();
 
                 foreach (var balance in context.Balances)
@@ -59,13 +66,20 @@ namespace CashApp
 
                 var balanceLast = list[list.Count - 1];
 
-                label2.Text = $"Баланс - {balanceLast.LastBalance:f2}";
+                context.Balances.Add(new Balance()
+                {
+                    LastBalance = balanceLast.LastBalance + decimal.Parse(textBox2.Text)
+                });
+
+                context.SaveChanges();
+
+                MessageBox.Show($"Успешно преведени {textBox2.Text} в картата!");
             }
             else
             {
-                MessageBox.Show($"Грешен ПИН!");
+                MessageBox.Show($"Невалидна стойност!\r\nЧислото не може да бъде отрицателно!");
             }
-
+            
         }
     }
 }

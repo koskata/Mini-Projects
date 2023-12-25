@@ -75,6 +75,7 @@
             // 
             // button1
             // 
+            button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(284, 195);
             button1.Name = "button1";
