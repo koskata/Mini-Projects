@@ -18,10 +18,15 @@ namespace CashApp
     {
         CalculatorContext context;
 
+        public List<Payment> Payments { get; set; }
+
         public PaymentsForm()
         {
             InitializeComponent();
             context = new CalculatorContext();
+            //Payments = GetPayments();
+
+            Payments = new List<Payment>();
 
             label1.Visible = false;
             textBox1.Visible = false;
@@ -29,11 +34,39 @@ namespace CashApp
             label3.Visible = false;
             textBox2.Visible = false;
             button2.Visible = false;
+
+            button3.Visible = false;
+            button4.Visible = false;
+
+            dataGridView1.Visible = false;
         }
+
+        //private List<Payment> GetPayments()
+        //{
+        //
+        //    List<Payment> paymentNewList = new List<Payment>();
+        //
+        //    foreach (var item in context.Payments)
+        //    {
+        //        paymentNewList.Add(item);
+        //    }
+        //
+        //
+        //    var list = new List<Payment>();
+        //
+        //    foreach (var payment in paymentNewList)
+        //    {
+        //        list.Add(payment);
+        //    }
+        //
+        //    return list;
+        //}
 
         private void PaymentsForm_Load(object sender, EventArgs e)
         {
-
+            //var payments = this.Payments;
+            //
+            //dataGridView1.DataSource = payments;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -47,10 +80,12 @@ namespace CashApp
                 textBox2.Visible = true;
                 button2.Visible = true;
 
+                button3.Visible = true;
+
+
                 label2.Visible = false;
                 textBox3.Visible = false;
                 button1.Visible = false;
-
 
             }
             else
@@ -94,6 +129,48 @@ namespace CashApp
             {
                 MessageBox.Show($"Невалидна дата!\r\nЧислото не може да бъде отрицателно!");
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            foreach (var item in context.Payments)
+            {
+                Payments.Add(item);
+            }
+
+            var payments = this.Payments;
+
+            dataGridView1.DataSource = payments;
+
+            label1.Visible = false;
+            textBox1.Visible = false;
+
+            label3.Visible = false;
+            textBox2.Visible = false;
+            button2.Visible = false;
+
+            button3.Visible = false;
+            button4.Visible = true;
+
+            dataGridView1.Visible = true;
+
+
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            textBox1.Visible = true;
+
+            label3.Visible = true;
+            textBox2.Visible = true;
+            button2.Visible = true;
+
+            button3.Visible = true;
+            button4.Visible = false;
+
+            dataGridView1.Visible = false;
         }
     }
 }

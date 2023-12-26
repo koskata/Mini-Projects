@@ -36,6 +36,10 @@
             label3 = new Label();
             textBox2 = new TextBox();
             button2 = new Button();
+            dataGridView1 = new DataGridView();
+            button3 = new Button();
+            button4 = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -120,11 +124,49 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToOrderColumns = true;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(12, 66);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(776, 372);
+            dataGridView1.TabIndex = 36;
+            // 
+            // button3
+            // 
+            button3.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button3.Location = new Point(228, 341);
+            button3.Name = "button3";
+            button3.Size = new Size(340, 82);
+            button3.TabIndex = 37;
+            button3.Text = "Виж всички плащания";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            button4.Location = new Point(12, 12);
+            button4.Name = "button4";
+            button4.Size = new Size(178, 46);
+            button4.TabIndex = 38;
+            button4.Text = "<-Назад";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
             // PaymentsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(dataGridView1);
             Controls.Add(button2);
             Controls.Add(textBox2);
             Controls.Add(label3);
@@ -136,6 +178,7 @@
             Name = "PaymentsForm";
             Text = "PaymentsForm";
             Load += PaymentsForm_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -150,5 +193,8 @@
         private Label label3;
         private TextBox textBox2;
         private Button button2;
+        private DataGridView dataGridView1;
+        private Button button3;
+        private Button button4;
     }
 }
