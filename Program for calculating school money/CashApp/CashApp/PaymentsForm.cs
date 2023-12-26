@@ -14,48 +14,57 @@ using CashApp.Data.Models;
 
 namespace CashApp
 {
-    public partial class ТranslatingMoneyForm : Form
+    public partial class PaymentsForm : Form
     {
-
         CalculatorContext context;
-        public ТranslatingMoneyForm()
+
+        public PaymentsForm()
         {
             InitializeComponent();
-
             context = new CalculatorContext();
 
-            label2.Visible = false;
+            label1.Visible = false;
+            textBox1.Visible = false;
+
+            label3.Visible = false;
             textBox2.Visible = false;
             button2.Visible = false;
         }
 
-        private void ТranslatingMoneyForm_Load(object sender, EventArgs e)
+        private void PaymentsForm_Load(object sender, EventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "1234")
+            if (textBox3.Text == "1234")
             {
-                label2.Visible = true;
+                label1.Visible = true;
+                textBox1.Visible = true;
+
+                label3.Visible = true;
                 textBox2.Visible = true;
                 button2.Visible = true;
 
-                label1.Visible = false;
-                textBox1.Visible = false;
+                label2.Visible = false;
+                textBox3.Visible = false;
                 button1.Visible = false;
+
+
             }
             else
             {
                 MessageBox.Show($"Грешен ПИН!");
             }
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (decimal.Parse(textBox2.Text) >= 0)
+            string name = textBox1.Text;
+            decimal price = decimal.Parse(textBox2.Text);
+
+            if (price >= 0)
             {
                 List<Balance> list = new List<Balance>();
 
@@ -68,18 +77,23 @@ namespace CashApp
 
                 context.Balances.Add(new Balance()
                 {
-                    LastBalance = balanceLast.LastBalance + decimal.Parse(textBox2.Text)
+                    LastBalance = balanceLast.LastBalance - price
+                });
+
+                context.Payments.Add(new Payment()
+                {
+                    Name = name,
+                    Price = price,
                 });
 
                 context.SaveChanges();
 
-                MessageBox.Show($"Успешно преведени {textBox2.Text} лв. в картата!");
+                MessageBox.Show($"Успешно платени {price:f2} лв.!");
             }
             else
             {
-                MessageBox.Show($"Невалидна стойност!\r\nЧислото не може да бъде отрицателно!");
+                MessageBox.Show($"Невалидна дата!\r\nЧислото не може да бъде отрицателно!");
             }
-
         }
     }
 }

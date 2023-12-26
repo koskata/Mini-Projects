@@ -194,7 +194,19 @@ namespace CashApp
 
             context.SaveChanges();
 
-            MessageBox.Show("Успешно променени транспортни!");
+
+            if (tableToFind.Месец == "Септемрви")
+            {
+                MessageBox.Show($"Успешно променени транспортни!\r\n" +
+                    $"Пари, които да приведе Бащицата за месец {tableToFind.Месец} - {50 - tableToFind.Транспортни}");
+            }
+            else
+            {
+                MessageBox.Show($"Успешно променени транспортни!\r\n" +
+                    $"Пари, които да приведе Бащицата за месец {tableToFind.Месец} - {100 - tableToFind.Транспортни}");
+            }
+
+            
         }
     }
 }

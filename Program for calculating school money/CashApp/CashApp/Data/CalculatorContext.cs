@@ -23,6 +23,8 @@
 
         public DbSet<Balance> Balances { get; set; }
 
+        public DbSet<Payment> Payments { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

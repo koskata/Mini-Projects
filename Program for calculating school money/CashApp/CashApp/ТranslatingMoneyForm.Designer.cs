@@ -85,6 +85,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(462, 39);
             textBox2.TabIndex = 27;
+            textBox2.TextAlign = HorizontalAlignment.Center;
             // 
             // button2
             // 

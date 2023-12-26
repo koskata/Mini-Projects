@@ -38,5 +38,12 @@ namespace CashApp
             ÒranslatingMoneyForm translatingMoneyForm = new();
             translatingMoneyForm.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            PaymentsForm payments = new PaymentsForm();
+
+            payments.Show();
+        }
     }
 }
