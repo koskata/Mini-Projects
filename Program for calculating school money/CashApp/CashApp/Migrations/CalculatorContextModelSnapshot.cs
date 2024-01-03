@@ -83,6 +83,30 @@ namespace CashApp.Migrations
 
                     b.ToTable("Payments");
                 });
+
+            modelBuilder.Entity("CashApp.Data.Models.Translate", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ДатаНаПревода")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Преводач")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Стойност")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Translates");
+                });
 #pragma warning restore 612, 618
         }
     }

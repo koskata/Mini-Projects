@@ -70,8 +70,6 @@ namespace CashApp
                 textBox3.Visible = true;
 
 
-                Calculator tableToUpdate;
-
             }
 
         }

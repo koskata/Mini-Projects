@@ -50,6 +50,21 @@ namespace CashApp.Migrations
                 {
                     table.PrimaryKey("PK_Payments", x => x.Id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "Translates",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Преводач = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ДатаНаПревода = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Стойност = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Translates", x => x.Id);
+                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -62,6 +77,9 @@ namespace CashApp.Migrations
 
             migrationBuilder.DropTable(
                 name: "Payments");
+
+            migrationBuilder.DropTable(
+                name: "Translates");
         }
     }
 }

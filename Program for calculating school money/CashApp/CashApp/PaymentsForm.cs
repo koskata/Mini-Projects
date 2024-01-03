@@ -23,8 +23,8 @@ namespace CashApp
         public PaymentsForm()
         {
             InitializeComponent();
-            context = new CalculatorContext();
             //Payments = GetPayments();
+            context = new CalculatorContext();
 
             Payments = new List<Payment>();
 
@@ -36,9 +36,6 @@ namespace CashApp
             button2.Visible = false;
 
             button3.Visible = false;
-            button4.Visible = false;
-
-            dataGridView1.Visible = false;
         }
 
         //private List<Payment> GetPayments()
@@ -133,27 +130,10 @@ namespace CashApp
 
         private void button3_Click(object sender, EventArgs e)
         {
-            foreach (var item in context.Payments)
-            {
-                Payments.Add(item);
-            }
 
-            var payments = this.Payments;
-
-            dataGridView1.DataSource = payments;
-
-            label1.Visible = false;
-            textBox1.Visible = false;
-
-            label3.Visible = false;
-            textBox2.Visible = false;
-            button2.Visible = false;
-
-            button3.Visible = false;
-            button4.Visible = true;
-
-            dataGridView1.Visible = true;
-
+            PaymentsDataGridViewForm paymentsDataGridViewForm = new PaymentsDataGridViewForm();
+            paymentsDataGridViewForm.Show();
+            this.Hide();
 
 
         }
@@ -168,9 +148,6 @@ namespace CashApp
             button2.Visible = true;
 
             button3.Visible = true;
-            button4.Visible = false;
-
-            dataGridView1.Visible = false;
         }
     }
 }

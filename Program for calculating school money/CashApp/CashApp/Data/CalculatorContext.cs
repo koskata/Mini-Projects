@@ -25,6 +25,8 @@
 
         public DbSet<Payment> Payments { get; set; }
 
+        public DbSet<Translate> Translates { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

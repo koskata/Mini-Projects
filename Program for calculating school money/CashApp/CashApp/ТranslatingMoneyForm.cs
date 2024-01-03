@@ -17,16 +17,26 @@ namespace CashApp
     public partial class ТranslatingMoneyForm : Form
     {
 
+        public List<Translate> Translates { get; set; }
+
         CalculatorContext context;
         public ТranslatingMoneyForm()
         {
             InitializeComponent();
+
+            Translates = new List<Translate>();
 
             context = new CalculatorContext();
 
             label2.Visible = false;
             textBox2.Visible = false;
             button2.Visible = false;
+
+            label3.Visible = false;
+            textBox3.Visible = false;
+
+            button3.Visible = false;
+
         }
 
         private void ТranslatingMoneyForm_Load(object sender, EventArgs e)
@@ -41,6 +51,9 @@ namespace CashApp
                 label2.Visible = true;
                 textBox2.Visible = true;
                 button2.Visible = true;
+                label3.Visible = true;
+                textBox3.Visible = true;
+                button3.Visible = true;
 
                 label1.Visible = false;
                 textBox1.Visible = false;
@@ -71,6 +84,16 @@ namespace CashApp
                     LastBalance = balanceLast.LastBalance + decimal.Parse(textBox2.Text)
                 });
 
+
+                var translateToAdd = new Translate()
+                {
+                    Преводач = textBox3.Text,
+                    ДатаНаПревода = DateTime.Now.ToString("dddd, dd MMMM yyyy"),
+                    Стойност = decimal.Parse(textBox2.Text)
+                };
+
+                context.Translates.Add(translateToAdd);
+
                 context.SaveChanges();
 
                 MessageBox.Show($"Успешно преведени {textBox2.Text} лв. в картата!");
@@ -81,5 +104,27 @@ namespace CashApp
             }
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TranslatesDataGridViewForm translatesDataGridViewForm = new TranslatesDataGridViewForm();
+
+
+
+            translatesDataGridViewForm.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            label2.Visible = true;
+            textBox2.Visible = true;
+            button2.Visible = true;
+            label3.Visible = true;
+            textBox3.Visible = true;
+            button3.Visible = true;
+        }
+
+
     }
 }

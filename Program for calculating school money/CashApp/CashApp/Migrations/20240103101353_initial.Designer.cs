@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CashApp.Migrations
 {
     [DbContext(typeof(CalculatorContext))]
-    [Migration("20231226122022_initial")]
+    [Migration("20240103101353_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -84,6 +84,30 @@ namespace CashApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Payments");
+                });
+
+            modelBuilder.Entity("CashApp.Data.Models.Translate", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ДатаНаПревода")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Преводач")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Стойност")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Translates");
                 });
 #pragma warning restore 612, 618
         }
