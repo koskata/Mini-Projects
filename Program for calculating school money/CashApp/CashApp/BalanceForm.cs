@@ -28,10 +28,16 @@ namespace CashApp
 
             //balance = context.Calculators.Sum(x => x.СумаЗаМесеца);
 
-            label2.Visible = false;
-            progressBar1.Visible = false;
+            List<Balance> list = new List<Balance>();
 
+            foreach (var balance in context.Balances)
+            {
+                list.Add(balance);
+            }
 
+            var balanceLast = list[list.Count - 1];
+
+            label2.Text = $"Баланс - {balanceLast.LastBalance:f2}";
         }
 
         private void BalanceForm_Load(object sender, EventArgs e)
@@ -41,31 +47,8 @@ namespace CashApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "1234")
-            {
-                label2.Visible = true;
-                progressBar1.Visible = true;
 
-                label1.Visible = false;
-                textBox1.Visible = false;
-                button1.Visible = false;
-
-                List<Balance> list = new List<Balance>();
-
-                foreach (var balance in context.Balances)
-                {
-                    list.Add(balance);
-                }
-
-                var balanceLast = list[list.Count - 1];
-
-                label2.Text = $"Баланс - {balanceLast.LastBalance:f2}";
-            }
-            else
-            {
-                MessageBox.Show($"Грешен ПИН!");
-            }
-
+            
         }
     }
 }

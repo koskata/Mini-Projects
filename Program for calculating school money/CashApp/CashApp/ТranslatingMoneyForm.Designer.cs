@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            textBox1 = new TextBox();
-            label1 = new Label();
             label2 = new Label();
             textBox2 = new TextBox();
             button2 = new Button();
@@ -38,38 +35,6 @@
             textBox3 = new TextBox();
             button3 = new Button();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Cursor = Cursors.Hand;
-            button1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(284, 245);
-            button1.Name = "button1";
-            button1.Size = new Size(202, 68);
-            button1.TabIndex = 26;
-            button1.Text = "Въведи";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(199, 192);
-            textBox1.Name = "textBox1";
-            textBox1.PasswordChar = '*';
-            textBox1.Size = new Size(388, 39);
-            textBox1.TabIndex = 25;
-            textBox1.TextAlign = HorizontalAlignment.Center;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(199, 138);
-            label1.Name = "label1";
-            label1.Size = new Size(388, 47);
-            label1.TabIndex = 24;
-            label1.Text = "Въведете вашият ПИН:";
             // 
             // label2
             // 
@@ -84,7 +49,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(171, 192);
+            textBox2.Location = new Point(171, 188);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(462, 39);
             textBox2.TabIndex = 27;
@@ -143,9 +108,6 @@
             Controls.Add(label3);
             Controls.Add(button2);
             Controls.Add(textBox2);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
             Controls.Add(label2);
             Name = "ТranslatingMoneyForm";
             Text = "ТranslatingMoneyForm";
@@ -155,10 +117,6 @@
         }
 
         #endregion
-
-        private Button button1;
-        private TextBox textBox1;
-        private Label label1;
         private Label label2;
         private TextBox textBox2;
         private Button button2;

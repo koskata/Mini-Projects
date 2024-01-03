@@ -27,15 +27,6 @@ namespace CashApp
             context = new CalculatorContext();
 
             Payments = new List<Payment>();
-
-            label1.Visible = false;
-            textBox1.Visible = false;
-
-            label3.Visible = false;
-            textBox2.Visible = false;
-            button2.Visible = false;
-
-            button3.Visible = false;
         }
 
         //private List<Payment> GetPayments()
@@ -68,27 +59,6 @@ namespace CashApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox3.Text == "1234")
-            {
-                label1.Visible = true;
-                textBox1.Visible = true;
-
-                label3.Visible = true;
-                textBox2.Visible = true;
-                button2.Visible = true;
-
-                button3.Visible = true;
-
-
-                label2.Visible = false;
-                textBox3.Visible = false;
-                button1.Visible = false;
-
-            }
-            else
-            {
-                MessageBox.Show($"Грешен ПИН!");
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -132,22 +102,13 @@ namespace CashApp
         {
 
             PaymentsDataGridViewForm paymentsDataGridViewForm = new PaymentsDataGridViewForm();
+            Form1 form1 = new();
+
+
             paymentsDataGridViewForm.Show();
             this.Hide();
 
 
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            label1.Visible = true;
-            textBox1.Visible = true;
-
-            label3.Visible = true;
-            textBox2.Visible = true;
-            button2.Visible = true;
-
-            button3.Visible = true;
         }
     }
 }

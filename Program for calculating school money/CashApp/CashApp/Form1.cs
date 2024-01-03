@@ -5,6 +5,13 @@ namespace CashApp
         public Form1()
         {
             InitializeComponent();
+
+            label1.Visible = false;
+            button1.Visible = false;
+            button2.Visible = false;
+            button3.Visible = false;
+            button4.Visible = false;
+            button5.Visible = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -44,6 +51,27 @@ namespace CashApp
             PaymentsForm payments = new PaymentsForm();
 
             payments.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (textBox2.Text == "1234")
+            {
+                label1.Visible = true;
+                button1.Visible = true;
+                button2.Visible = true;
+                button3.Visible = true;
+                button4.Visible = true;
+                button5.Visible = true;
+
+                label2.Visible = false;
+                textBox2.Visible = false;
+                button6.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show($"Грешен ПИН!");
+            }
         }
     }
 }

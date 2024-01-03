@@ -45,7 +45,10 @@ namespace CashApp
         private void button4_Click(object sender, EventArgs e)
         {
             PaymentsForm paymentsForm = new PaymentsForm();
+
+
             paymentsForm.Show();
+
             this.Hide();
         }
     }

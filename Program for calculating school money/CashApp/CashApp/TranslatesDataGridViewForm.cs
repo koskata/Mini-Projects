@@ -46,6 +46,7 @@ namespace CashApp
         private void button4_Click(object sender, EventArgs e)
         {
             ТranslatingMoneyForm translatingMoneyForm = new();
+
             translatingMoneyForm.Show();
             this.Hide();
         }

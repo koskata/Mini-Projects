@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CashApp.Migrations
 {
     [DbContext(typeof(CalculatorContext))]
-    [Migration("20240103101353_initial")]
+    [Migration("20240103174122_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -34,6 +34,9 @@
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
+            label2 = new Label();
+            textBox2 = new TextBox();
+            button6 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -108,11 +111,46 @@
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(192, 74);
+            label2.Name = "label2";
+            label2.Size = new Size(388, 47);
+            label2.TabIndex = 25;
+            label2.Text = "Въведете вашият ПИН:";
+            // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Location = new Point(150, 136);
+            textBox2.Name = "textBox2";
+            textBox2.PasswordChar = '*';
+            textBox2.Size = new Size(462, 39);
+            textBox2.TabIndex = 28;
+            textBox2.TextAlign = HorizontalAlignment.Center;
+            // 
+            // button6
+            // 
+            button6.Cursor = Cursors.Hand;
+            button6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            button6.Location = new Point(277, 203);
+            button6.Name = "button6";
+            button6.Size = new Size(202, 68);
+            button6.TabIndex = 29;
+            button6.Text = "Въведи";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button6);
+            Controls.Add(textBox2);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(button5);
@@ -134,5 +172,8 @@
         private Button button3;
         private Button button4;
         private Button button5;
+        private Label label2;
+        private TextBox textBox2;
+        private Button button6;
     }
 }

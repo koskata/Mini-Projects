@@ -28,15 +28,6 @@ namespace CashApp
 
             context = new CalculatorContext();
 
-            label2.Visible = false;
-            textBox2.Visible = false;
-            button2.Visible = false;
-
-            label3.Visible = false;
-            textBox3.Visible = false;
-
-            button3.Visible = false;
-
         }
 
         private void ТranslatingMoneyForm_Load(object sender, EventArgs e)
@@ -46,23 +37,6 @@ namespace CashApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "1234")
-            {
-                label2.Visible = true;
-                textBox2.Visible = true;
-                button2.Visible = true;
-                label3.Visible = true;
-                textBox3.Visible = true;
-                button3.Visible = true;
-
-                label1.Visible = false;
-                textBox1.Visible = false;
-                button1.Visible = false;
-            }
-            else
-            {
-                MessageBox.Show($"Грешен ПИН!");
-            }
 
         }
 
@@ -108,21 +82,11 @@ namespace CashApp
         private void button3_Click(object sender, EventArgs e)
         {
             TranslatesDataGridViewForm translatesDataGridViewForm = new TranslatesDataGridViewForm();
-
+            Form1 form1 = new();
 
 
             translatesDataGridViewForm.Show();
             this.Hide();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            label2.Visible = true;
-            textBox2.Visible = true;
-            button2.Visible = true;
-            label3.Visible = true;
-            textBox3.Visible = true;
-            button3.Visible = true;
         }
 
 
