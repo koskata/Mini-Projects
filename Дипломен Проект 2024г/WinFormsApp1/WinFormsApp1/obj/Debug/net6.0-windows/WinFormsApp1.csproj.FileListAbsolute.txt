@@ -56,3 +56,5 @@ D:\Дипломен Проект 2024г\WinFormsApp1\WinFormsApp1\obj\Debug\net6
 D:\Дипломен Проект 2024г\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.pdb
 D:\Дипломен Проект 2024г\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.genruntimeconfig.cache
 D:\Дипломен Проект 2024г\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\ref\WinFormsApp1.dll
+D:\Дипломен Проект 2024г\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Properties.Resources.resources
+D:\Дипломен Проект 2024г\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.StartPage.resources

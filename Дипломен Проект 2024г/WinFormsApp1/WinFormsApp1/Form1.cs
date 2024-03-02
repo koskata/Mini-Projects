@@ -79,10 +79,10 @@ namespace WinFormsApp1
                                 textBox11.Text = molSettings[i];
                                 textBox11.Update();
                                 break;
-                            case 11:
-                                textBox12.Text = molSettings[i];
-                                textBox12.Update();
-                                break;
+                            //case 11:
+                            //    textBox12.Text = molSettings[i];
+                            //    textBox12.Update();
+                            //    break;
 
                             default:
                                 break;
