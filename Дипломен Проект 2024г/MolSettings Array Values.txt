@@ -1,0 +1,13 @@
+MolSettings array:
+[0] - "C:\\MOLSettings\\G1\\NAV_EXCEL"
+[1] - "C:\\MOLSettings\\G1\\EXCEL_NAV"
+[2] - "c:\\MOL\\PRINT"
+[3] - "c:\\MOL\\PRINT1"
+[4] - "HTTPS://HQR.CODES?HID="
+[5] - "&Model="
+[6] - "C:\\MOLSettings\\G1\\Archive"
+[7] - "QR_Printing&ExpImpNAV_Info-14052019.xlsm"
+[8] - "c:\\MOLSettings\\G5\\NAV_EXCEL"
+[9] - "c:\\MOLSettings\\G5\\EXCEL_NAV"
+[10] - "c:\\MOLSettings\\G5\\ARCHIVE"
+[11] - "\\\\sw02914\\mol\\G2\\EPA"
