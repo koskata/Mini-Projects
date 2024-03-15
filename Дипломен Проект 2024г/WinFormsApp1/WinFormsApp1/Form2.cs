@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinFormsApp1
@@ -167,7 +168,7 @@ namespace WinFormsApp1
 
                 //-----------------------Update-----------------------------------------------
 
-                
+
 
                 if (File.Exists(Form1.molSettings[0] + "\\out.txt"))
                 {
@@ -312,6 +313,8 @@ namespace WinFormsApp1
                 textBox1.Text = "";
 
 
+                bool isSerNumWrong = false;
+
                 year1 = "";
                 month1 = "";
 
@@ -328,54 +331,54 @@ namespace WinFormsApp1
                             {
                                 year1 = "2018";
                             }
-                            if (compSN.Substring(0, 2) == "49")
+                            else if (compSN.Substring(0, 2) == "49")
                             {
                                 year1 = "2019";
                             }
-                            if (compSN.Substring(0, 2) == "50")
+                            else if (compSN.Substring(0, 2) == "50")
                             {
                                 year1 = "2020";
                                 year4 = 1;
                             }
-                            if (compSN.Substring(0, 2) == "51")
+                            else if (compSN.Substring(0, 2) == "51")
                             {
                                 year1 = "2021";
                             }
-                            if (compSN.Substring(0, 2) == "52")
+                            else if (compSN.Substring(0, 2) == "52")
                             {
                                 year1 = "2022";
                             }
-                            if (compSN.Substring(0, 2) == "53")
+                            else if (compSN.Substring(0, 2) == "53")
                             {
                                 year1 = "2023";
                             }
-                            if (compSN.Substring(0, 2) == "54")
+                            else if (compSN.Substring(0, 2) == "54")
                             {
                                 year1 = "2024";
                                 year4 = 1;
                             }
-                            if (compSN.Substring(0, 2) == "55")
+                            else if (compSN.Substring(0, 2) == "55")
                             {
                                 year1 = "2025";
                             }
-                            if (compSN.Substring(0, 2) == "56")
+                            else if (compSN.Substring(0, 2) == "56")
                             {
                                 year1 = "2026";
                             }
-                            if (compSN.Substring(0, 2) == "57")
+                            else if (compSN.Substring(0, 2) == "57")
                             {
                                 year1 = "2027";
                             }
-                            if (compSN.Substring(0, 2) == "58")
+                            else if (compSN.Substring(0, 2) == "58")
                             {
                                 year1 = "2028";
                                 year4 = 1;
                             }
-                            if (compSN.Substring(0, 2) == "59")
+                            else if (compSN.Substring(0, 2) == "59")
                             {
                                 year1 = "2029";
                             }
-                            if (compSN.Substring(0, 2) == "60")
+                            else if (compSN.Substring(0, 2) == "60")
                             {
                                 year1 = "2030";
                             }
@@ -388,47 +391,47 @@ namespace WinFormsApp1
                             {
                                 month1 = "01.";
                             }
-                            if (int.Parse(compSN.Substring(2, 3)) < 60 + year4)
+                            else if (int.Parse(compSN.Substring(2, 3)) < 60 + year4)
                             {
                                 month1 = "02.";
                             }
-                            if (int.Parse(compSN.Substring(2, 3)) < 91 + year4)
+                            else if (int.Parse(compSN.Substring(2, 3)) < 91 + year4)
                             {
                                 month1 = "03.";
                             }
-                            if (int.Parse(compSN.Substring(2, 3)) < 121 + year4)
+                            else if (int.Parse(compSN.Substring(2, 3)) < 121 + year4)
                             {
                                 month1 = "04.";
                             }
-                            if (int.Parse(compSN.Substring(2, 3)) < 152 + year4)
+                            else if (int.Parse(compSN.Substring(2, 3)) < 152 + year4)
                             {
                                 month1 = "05.";
                             }
-                            if (int.Parse(compSN.Substring(2, 3)) < 182 + year4)
+                            else if (int.Parse(compSN.Substring(2, 3)) < 182 + year4)
                             {
                                 month1 = "06.";
                             }
-                            if (int.Parse(compSN.Substring(2, 3)) < 213 + year4)
+                            else if (int.Parse(compSN.Substring(2, 3)) < 213 + year4)
                             {
                                 month1 = "07.";
                             }
-                            if (int.Parse(compSN.Substring(2, 3)) < 244 + year4)
+                            else if (int.Parse(compSN.Substring(2, 3)) < 244 + year4)
                             {
                                 month1 = "08.";
                             }
-                            if (int.Parse(compSN.Substring(2, 3)) < 274 + year4)
+                            else if (int.Parse(compSN.Substring(2, 3)) < 274 + year4)
                             {
                                 month1 = "09.";
                             }
-                            if (int.Parse(compSN.Substring(2, 3)) < 305 + year4)
+                            else if (int.Parse(compSN.Substring(2, 3)) < 305 + year4)
                             {
                                 month1 = "10.";
                             }
-                            if (int.Parse(compSN.Substring(2, 3)) < 335 + year4)
+                            else if (int.Parse(compSN.Substring(2, 3)) < 335 + year4)
                             {
                                 month1 = "11.";
                             }
-                            if (int.Parse(compSN.Substring(2, 3)) < 365 + year4)
+                            else if (int.Parse(compSN.Substring(2, 3)) < 365 + year4)
                             {
                                 month1 = "12.";
                             }
@@ -438,47 +441,47 @@ namespace WinFormsApp1
                             {
                                 month1 = "01.";
                             }
-                            if (compSN.Substring(2, 1).ToLower() == "c" || compSN.Substring(2, 1).ToLower() == "d")
+                            else if (compSN.Substring(2, 1).ToLower() == "c" || compSN.Substring(2, 1).ToLower() == "d")
                             {
                                 month1 = "02.";
                             }
-                            if (compSN.Substring(2, 1).ToLower() == "e" || compSN.Substring(2, 1).ToLower() == "f")
+                            else if (compSN.Substring(2, 1).ToLower() == "e" || compSN.Substring(2, 1).ToLower() == "f")
                             {
                                 month1 = "03.";
                             }
-                            if (compSN.Substring(2, 1).ToLower() == "g" || compSN.Substring(2, 1).ToLower() == "h")
+                            else if (compSN.Substring(2, 1).ToLower() == "g" || compSN.Substring(2, 1).ToLower() == "h")
                             {
                                 month1 = "04.";
                             }
-                            if (compSN.Substring(2, 1).ToLower() == "j" || compSN.Substring(2, 1).ToLower() == "k")
+                            else if (compSN.Substring(2, 1).ToLower() == "j" || compSN.Substring(2, 1).ToLower() == "k")
                             {
                                 month1 = "05.";
                             }
-                            if (compSN.Substring(2, 1).ToLower() == "l" || compSN.Substring(2, 1).ToLower() == "m")
+                            else if (compSN.Substring(2, 1).ToLower() == "l" || compSN.Substring(2, 1).ToLower() == "m")
                             {
                                 month1 = "06.";
                             }
-                            if (compSN.Substring(2, 1).ToLower() == "n" || compSN.Substring(2, 1).ToLower() == "p" || compSN.Substring(2, 1).ToLower() == "o")
+                            else if (compSN.Substring(2, 1).ToLower() == "n" || compSN.Substring(2, 1).ToLower() == "p" || compSN.Substring(2, 1).ToLower() == "o")
                             {
                                 month1 = "07.";
                             }
-                            if (compSN.Substring(2, 1).ToLower() == "q" || compSN.Substring(2, 1).ToLower() == "r")
+                            else if (compSN.Substring(2, 1).ToLower() == "q" || compSN.Substring(2, 1).ToLower() == "r")
                             {
                                 month1 = "08.";
                             }
-                            if (compSN.Substring(2, 1).ToLower() == "s" || compSN.Substring(2, 1).ToLower() == "t")
+                            else if (compSN.Substring(2, 1).ToLower() == "s" || compSN.Substring(2, 1).ToLower() == "t")
                             {
                                 month1 = "09.";
                             }
-                            if (compSN.Substring(2, 1).ToLower() == "u" || compSN.Substring(2, 1).ToLower() == "v")
+                            else if (compSN.Substring(2, 1).ToLower() == "u" || compSN.Substring(2, 1).ToLower() == "v")
                             {
                                 month1 = "10.";
                             }
-                            if (compSN.Substring(2, 1).ToLower() == "w" || compSN.Substring(2, 1).ToLower() == "x")
+                            else if (compSN.Substring(2, 1).ToLower() == "w" || compSN.Substring(2, 1).ToLower() == "x")
                             {
                                 month1 = "11.";
                             }
-                            if (compSN.Substring(2, 1).ToLower() == "y" || compSN.Substring(2, 1).ToLower() == "z")
+                            else if (compSN.Substring(2, 1).ToLower() == "y" || compSN.Substring(2, 1).ToLower() == "z")
                             {
                                 month1 = "12.";
                             }
@@ -489,57 +492,65 @@ namespace WinFormsApp1
                             {
                                 year1 = "2018";
                             }
-                            if (compSN.Substring(1, 1).ToLower() == "k")
+                            else if (compSN.Substring(1, 1).ToLower() == "k")
                             {
                                 year1 = "2019";
                             }
-                            if (compSN.Substring(1, 1).ToLower() == "l")
+                            else if (compSN.Substring(1, 1).ToLower() == "l")
                             {
                                 year1 = "2020";
                             }
-                            if (compSN.Substring(1, 1).ToLower() == "m")
+                            else if (compSN.Substring(1, 1).ToLower() == "m")
                             {
                                 year1 = "2021";
                             }
-                            if (compSN.Substring(1, 1).ToLower() == "n")
+                            else if (compSN.Substring(1, 1).ToLower() == "n")
                             {
                                 year1 = "2022";
                             }
-                            if (compSN.Substring(1, 1).ToLower() == "p")
+                            else if (compSN.Substring(1, 1).ToLower() == "p")
                             {
                                 year1 = "2023";
                             }
-                            if (compSN.Substring(1, 1).ToLower() == "r")
+                            else if (compSN.Substring(1, 1).ToLower() == "r")
                             {
                                 year1 = "2024";
                             }
-                            if (compSN.Substring(1, 1).ToLower() == "s")
+                            else if (compSN.Substring(1, 1).ToLower() == "s")
                             {
                                 year1 = "2025";
                             }
-                            if (compSN.Substring(1, 1).ToLower() == "t")
+                            else if (compSN.Substring(1, 1).ToLower() == "t")
                             {
                                 year1 = "2026";
                             }
-                            if (compSN.Substring(1, 1).ToLower() == "u")
+                            else if (compSN.Substring(1, 1).ToLower() == "u")
                             {
                                 year1 = "2027";
                             }
-                            if (compSN.Substring(1, 1).ToLower() == "v")
+                            else if (compSN.Substring(1, 1).ToLower() == "v")
                             {
                                 year1 = "2028";
                             }
-                            if (compSN.Substring(1, 1).ToLower() == "w")
+                            else if (compSN.Substring(1, 1).ToLower() == "w")
                             {
                                 year1 = "2029";
                             }
-                            if (compSN.Substring(1, 1).ToLower() == "x")
+                            else if (compSN.Substring(1, 1).ToLower() == "x")
                             {
                                 year1 = "2030";
                             }
                             break;
                         case "Motorenfabrik Hatz GmbH & Co.KG":
-                            year1 = "20" + compSN.Substring(5, 2);
+                            if (compSN.Length < 11)
+                            {
+                                isSerNumWrong = true;
+                                MessageBox.Show("Серийния номер на двигател не е открит! Сканирайте отново!");
+                            }
+                            else
+                            {
+                                year1 = "20" + compSN.Substring(5, 2);
+                            }
 
                             break;
                         default:
@@ -551,6 +562,14 @@ namespace WinFormsApp1
 
 
                 }
+
+                //if (month1 == "" && year1 == "" && isSerNumWrong == false)
+                //{
+                //    MessageBox.Show("Серийния номер на двигател не е открит! Сканирайте отново!");
+                //}
+                //else
+                //{
+
 
                 DateTime TestDateTime1 = DateTime.Now;
                 string strDate = "D" + TestDateTime1.ToString("yyyy/MM/dd/hh/mm/ss");
@@ -641,6 +660,7 @@ namespace WinFormsApp1
                     default:
                         break;
                 }
+                //}
             }
 
         }

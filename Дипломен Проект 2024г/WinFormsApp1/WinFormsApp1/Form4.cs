@@ -524,10 +524,10 @@ namespace WinFormsApp1
 
             string fileInfo = textBox5.Text + textBox3.Text + ";";
 
-            if (fileInfo.Contains((Char)10))
-            {
-                MessageBox.Show("Contains");
-            }
+            //if (fileInfo.Contains((Char)10))
+            //{
+            //    MessageBox.Show("Contains");
+            //}
 
             using (StreamWriter sw = new StreamWriter(Form1.molSettings[1] + $"\\{textBox5.Text.Substring(0, 12)}.txt"))
             {
