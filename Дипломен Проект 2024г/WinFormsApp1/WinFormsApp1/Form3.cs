@@ -465,7 +465,7 @@ namespace WinFormsApp1
 
             string fullString = textBox1.Text + ";" + str2 + ";" + newString + ";" + str3 + ";" + str4 + ";" + str5 + ";" + str6 + ";" + str7 + ";" + str8 + ";" + str9 + ";" + str10 + ";" + str11 + ";" + str12 + ";" + str13 + ";" + str14 + ";" + str15 + ";" + str16 + ";" + str17 + ";" + str18 + ";" + str19 + ";" + str20 + ";" + str21 + ";";
 
-            using (StreamWriter sw = new StreamWriter(Form1.molSettings[1] + $"\\{textBox1.Text}.txt"))
+            using (StreamWriter sw = new StreamWriter(Form1.molSettings[9] + $"\\{textBox1.Text}.txt"))
             {
                 sw.WriteLine(fullString);
             }

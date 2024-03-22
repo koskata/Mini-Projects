@@ -459,6 +459,7 @@
             Controls.Add(y2020);
             Controls.Add(y2021);
             Controls.Add(textBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form4";
             Text = "ФОРМА за въвеждане Дата Производство на Двигател";

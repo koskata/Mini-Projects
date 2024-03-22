@@ -329,6 +329,7 @@
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";

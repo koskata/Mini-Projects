@@ -61,6 +61,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "StartPage";
             Text = "StartPage";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
