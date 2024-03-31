@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u041F\u0440\u043E\u0435\u043A\u0442 2024\u0433\\WinFormsApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{514CEC8F-FF88-49A9-A30E-F5E21C982FA5}|WinFormsApp1\\WinFormsApp1.csproj|D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u041F\u0440\u043E\u0435\u043A\u0442 2024\u0433\\WinFormsApp1\\winformsapp1\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{514CEC8F-FF88-49A9-A30E-F5E21C982FA5}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{514CEC8F-FF88-49A9-A30E-F5E21C982FA5}|WinFormsApp1\\WinFormsApp1.csproj|D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u041F\u0440\u043E\u0435\u043A\u0442 2024\u0433\\WinFormsApp1\\winformsapp1\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{514CEC8F-FF88-49A9-A30E-F5E21C982FA5}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{514CEC8F-FF88-49A9-A30E-F5E21C982FA5}|WinFormsApp1\\WinFormsApp1.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u043F\u0440\u043E\u0435\u043A\u0442 2024\u0433\\winformsapp1\\winformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{514CEC8F-FF88-49A9-A30E-F5E21C982FA5}|WinFormsApp1\\WinFormsApp1.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u043F\u0440\u043E\u0435\u043A\u0442 2024\u0433\\winformsapp1\\winformsapp1\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{514CEC8F-FF88-49A9-A30E-F5E21C982FA5}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514CEC8F-FF88-49A9-A30E-F5E21C982FA5}|WinFormsApp1\\WinFormsApp1.csproj|D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u041F\u0440\u043E\u0435\u043A\u0442 2024\u0433\\WinFormsApp1\\winformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{514CEC8F-FF88-49A9-A30E-F5E21C982FA5}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -120,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form3.cs [Design]",
               "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u041F\u0440\u043E\u0435\u043A\u0442 2024\u0433\\WinFormsApp1\\WinFormsApp1\\Form3.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form3.cs",
@@ -132,13 +132,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form3.cs",
               "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u041F\u0440\u043E\u0435\u043A\u0442 2024\u0433\\WinFormsApp1\\WinFormsApp1\\Form3.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form3.cs",
               "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u041F\u0440\u043E\u0435\u043A\u0442 2024\u0433\\WinFormsApp1\\WinFormsApp1\\Form3.cs",
               "RelativeToolTip": "WinFormsApp1\\Form3.cs",
-              "ViewState": "AQIAAP8AAAAAAAAAAAAgwAIBAAAAAAAA",
+              "ViewState": "AQIAAMQBAAAAAAAAAAAAAKEBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T08:52:35.908Z",
               "EditorCaption": ""
@@ -152,8 +152,7 @@
               "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u041F\u0440\u043E\u0435\u043A\u0442 2024\u0433\\WinFormsApp1\\WinFormsApp1\\Form2.cs [Design]",
               "RelativeToolTip": "WinFormsApp1\\Form2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T08:14:44.752Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-15T08:14:44.752Z"
             },
             {
               "$type": "Document",
