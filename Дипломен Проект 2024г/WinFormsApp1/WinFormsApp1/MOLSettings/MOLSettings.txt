@@ -1,0 +1,11 @@
+../../../MOLSettings/G1/NAV_EXCEL
+../../../MOLSettings/G1/EXCEL_NAV
+../../../MOL/PRINT
+../../../MOL/PRINT1
+HTTPS://HQR.CODES?HID=
+&Model=
+../../../MOLSettings/G1/Archive
+QR_Printing&ExpImpNAV_Info-14052019.xlsm
+../../../MOLSettings/G5/NAV_EXCEL
+../../../MOLSettings/G5/EXCEL_NAV
+../../../MOLSettings/G5/ARCHIVE

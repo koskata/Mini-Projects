@@ -44,9 +44,9 @@ namespace WinFormsApp1
 
             engineInfo = new Dictionary<string, List<string>>();
 
-            if (File.Exists("C:\\MOLSettings\\STD\\out.txt"))
+            if (File.Exists("../../../MOLSettings/STD/out.txt"))
             {
-                using (StreamReader sr = new StreamReader("C:\\MOLSettings\\STD\\out.txt"))
+                using (StreamReader sr = new StreamReader("../../../MOLSettings/STD/out.txt"))
                 {
                     string line;
 
@@ -68,9 +68,9 @@ namespace WinFormsApp1
             }
 
 
-            if (File.Exists("C:\\MOLSettings\\itemsnav.txt"))
+            if (File.Exists("../../../MOLSettings/itemsnav.txt"))
             {
-                using (StreamReader sr = new StreamReader("C:\\MOLSettings\\itemsnav.txt"))
+                using (StreamReader sr = new StreamReader("../../../MOLSettings/itemsnav.txt"))
                 {
                     string line;
 
@@ -92,9 +92,9 @@ namespace WinFormsApp1
             }
 
 
-            if (File.Exists("C:\\MOLSettings\\engineinfo.txt"))
+            if (File.Exists("../../../MOLSettings/engineinfo.txt"))
             {
-                using (StreamReader sr = new StreamReader("C:\\MOLSettings\\engineinfo.txt"))
+                using (StreamReader sr = new StreamReader("../../../MOLSettings/engineinfo.txt"))
                 {
                     string line;
 
@@ -170,25 +170,25 @@ namespace WinFormsApp1
 
 
 
-                if (File.Exists(Form1.molSettings[0] + "\\out.txt"))
+                if (File.Exists(Form1.molSettings[0] + "/out.txt"))
                 {
-                    File.Delete("C:\\MOLSettings\\STD\\out.txt");
-                    File.Copy(Form1.molSettings[0] + "\\out.txt", "C:\\MOLSettings\\STD\\out.txt");
+                    File.Delete("../../../MOLSettings/STD/out.txt");
+                    File.Copy(Form1.molSettings[0] + "/out.txt", "../../../MOLSettings/STD/out.txt");
 
-                    if (File.Exists(Form1.molSettings[6] + "\\out.txt"))
+                    if (File.Exists(Form1.molSettings[6] + "/out.txt"))
                     {
-                        File.Delete(Form1.molSettings[6] + "\\out.txt");
+                        File.Delete(Form1.molSettings[6] + "/out.txt");
                     }
 
 
-                    File.Copy(Form1.molSettings[0] + "\\out.txt", Form1.molSettings[6] + "\\out.txt");
-                    File.Delete(Form1.molSettings[0] + "\\out.txt");
+                    File.Copy(Form1.molSettings[0] + "/out.txt", Form1.molSettings[6] + "/out.txt");
+                    File.Delete(Form1.molSettings[0] + "/out.txt");
 
                     serNumWithValues2.Clear();
 
-                    if (File.Exists("C:\\MOLSettings\\STD\\out.txt"))
+                    if (File.Exists("../../../MOLSettings/STD/out.txt"))
                     {
-                        using (StreamReader sr = new StreamReader("C:\\MOLSettings\\STD\\out.txt"))
+                        using (StreamReader sr = new StreamReader("../../../MOLSettings/STD/out.txt"))
                         {
                             string line;
 
@@ -284,15 +284,15 @@ namespace WinFormsApp1
                     string fileInfo = Form1.molSettings[4] + HIDstr + "$" + prodSN;
 
 
-                    using (StreamWriter sw = new StreamWriter(Form1.molSettings[3] + $"\\{HIDstr}.txt"))
+                    using (StreamWriter sw = new StreamWriter(Form1.molSettings[3] + $"/{HIDstr}.txt"))
                     {
                         sw.WriteLine(fileInfo);
                     }
 
 
-                    File.Copy(Form1.molSettings[3] + $"\\{HIDstr}.txt", Form1.molSettings[2] + $"\\{HIDstr}.txt");
+                    File.Copy(Form1.molSettings[3] + $"/{HIDstr}.txt", Form1.molSettings[2] + $"/{HIDstr}.txt");
 
-                    File.Delete(Form1.molSettings[3] + $"\\{HIDstr}.txt");
+                    File.Delete(Form1.molSettings[3] + $"/{HIDstr}.txt");
 
 
                 }
@@ -562,14 +562,6 @@ namespace WinFormsApp1
 
 
                 }
-
-                //if (month1 == "" && year1 == "" && isSerNumWrong == false)
-                //{
-                //    MessageBox.Show("Серийния номер на двигател не е открит! Сканирайте отново!");
-                //}
-                //else
-                //{
-
 
                 DateTime TestDateTime1 = DateTime.Now;
                 string strDate = "D" + TestDateTime1.ToString("yyyy/MM/dd/hh/mm/ss");

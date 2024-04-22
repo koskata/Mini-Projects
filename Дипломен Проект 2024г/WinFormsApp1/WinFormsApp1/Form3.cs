@@ -26,9 +26,9 @@ namespace WinFormsApp1
             numWithValues = new Dictionary<string, List<string>>();
 
 
-            if (File.Exists("C:\\MOLSettings\\HTC\\out.txt"))
+            if (File.Exists("../../../MOLSettings/HTC/out.txt"))
             {
-                using (StreamReader sr = new StreamReader("C:\\MOLSettings\\HTC\\out.txt"))
+                using (StreamReader sr = new StreamReader("../../../MOLSettings/HTC/out.txt"))
                 {
                     string line;
 
@@ -50,9 +50,9 @@ namespace WinFormsApp1
             }
 
 
-            if (File.Exists("C:\\MOLSettings\\itemsnav.txt"))
+            if (File.Exists("../../../MOLSettings/itemsnav.txt"))
             {
-                using (StreamReader sr = new StreamReader("C:\\MOLSettings\\itemsnav.txt"))
+                using (StreamReader sr = new StreamReader("../../../MOLSettings/itemsnav.txt"))
                 {
                     string line;
 
@@ -307,27 +307,27 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (File.Exists(Form1.molSettings[8] + "\\out.txt"))
+            if (File.Exists(Form1.molSettings[8] + "/out.txt"))
             {
-                File.Delete("C:\\MOLSettings\\HTC\\out.txt");
-                File.Copy(Form1.molSettings[8] + "\\out.txt", "C:\\MOLSettings\\HTC\\out.txt");
+                File.Delete("../../../MOLSettings/HTC/out.txt");
+                File.Copy(Form1.molSettings[8] + "/out.txt", "../../../MOLSettings/HTC/out.txt");
 
-                if (File.Exists(Form1.molSettings[10] + "\\out.txt"))
+                if (File.Exists(Form1.molSettings[10] + "/out.txt"))
                 {
-                    File.Delete(Form1.molSettings[10] + "\\out.txt");
+                    File.Delete(Form1.molSettings[10] + "/out.txt");
                 }
 
 
-                File.Copy(Form1.molSettings[8] + "\\out.txt", Form1.molSettings[10] + "\\out.txt");
-                File.Delete(Form1.molSettings[8] + "\\out.txt");
+                File.Copy(Form1.molSettings[8] + "/out.txt", Form1.molSettings[10] + "/out.txt");
+                File.Delete(Form1.molSettings[8] + "/out.txt");
             }
 
 
             serNumWithValues.Clear();
 
-            if (File.Exists("C:\\MOLSettings\\HTC\\out.txt"))
+            if (File.Exists("../../../MOLSettings/HTC/out.txt"))
             {
-                using (StreamReader sr = new StreamReader("C:\\MOLSettings\\HTC\\out.txt"))
+                using (StreamReader sr = new StreamReader("../../../MOLSettings/HTC/out.txt"))
                 {
                     string line;
 
@@ -465,7 +465,7 @@ namespace WinFormsApp1
 
             string fullString = textBox1.Text + ";" + str2 + ";" + newString + ";" + str3 + ";" + str4 + ";" + str5 + ";" + str6 + ";" + str7 + ";" + str8 + ";" + str9 + ";" + str10 + ";" + str11 + ";" + str12 + ";" + str13 + ";" + str14 + ";" + str15 + ";" + str16 + ";" + str17 + ";" + str18 + ";" + str19 + ";" + str20 + ";" + str21 + ";";
 
-            using (StreamWriter sw = new StreamWriter(Form1.molSettings[9] + $"\\{textBox1.Text}.txt"))
+            using (StreamWriter sw = new StreamWriter(Form1.molSettings[9] + $"/{textBox1.Text}.txt"))
             {
                 sw.WriteLine(fullString);
             }

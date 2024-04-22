@@ -1,0 +1,12 @@
+Folder IN
+Folder OUT NAV
+Folder OUT QR Print 2
+Folder OUT QR Print 1
+AC_MOL_TEXT1
+AC_MOL_TEXT2
+Archive
+Workbook
+Folder IN EL
+Folder OUT NAV EL
+Archive  EL
+EPA Folder

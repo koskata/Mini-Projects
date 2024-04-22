@@ -13,9 +13,9 @@ namespace WinFormsApp1
             InitializeComponent();
             instance = this;
 
-            if (File.Exists("C:\\MOLSettings\\MOLSettings.txt"))
+            if (File.Exists("../../../MOLSettings/MOLSettings.txt"))
             {
-                using (StreamReader sr = new StreamReader("C:\\MOLSettings\\MOLSettings.txt"))
+                using (StreamReader sr = new StreamReader("../../../MOLSettings/MOLSettings.txt"))
                 {
                     string line;
 
