@@ -1,0 +1,32 @@
+﻿@model Topic
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="card mt-5">
+    <div class="card-header text-center">
+        <h4>Random Generator</h4>
+    </div>
+    <div class="card-body text-center">
+        @if (Model != null)
+        {
+            <a href="@Model.Url" class="btn btn-primary" id="viewButton">@Model.Name</a>
+        }
+        <br></br>
+        <form class="mb-5">
+            <div class="form-group mb-3">
+                <label asp-for="Genre"></label>
+                <input asp-for="Genre" class="form-control" placeholder="Genre...">
+            </div>
+            <div class="form-group mb-5">
+                <label asp-for="Author"></label>
+                <input asp-for="Author" class="form-control" placeholder="Author...">
+            </div>
+        </form>
+        <hr></hr>
+        <a asp-controller="Home" asp-action="Generate" class="btn btn-success" id="generateButton">Generate</a>
+    </div>
+</div>
