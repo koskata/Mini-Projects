@@ -54,11 +54,10 @@
             // 
             textBox1.BackColor = Color.FromArgb(255, 255, 192);
             textBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(10, 9);
-            textBox1.Margin = new Padding(3, 2, 3, 2);
+            textBox1.Location = new Point(11, 12);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(269, 97);
+            textBox1.Size = new Size(307, 128);
             textBox1.TabIndex = 0;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
@@ -66,10 +65,9 @@
             // 
             button1.BackColor = Color.FromArgb(128, 255, 255);
             button1.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(332, 11);
-            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Location = new Point(379, 15);
             button1.Name = "button1";
-            button1.Size = new Size(143, 62);
+            button1.Size = new Size(163, 83);
             button1.TabIndex = 1;
             button1.Text = "Нулиране Сер. Номер";
             button1.UseVisualStyleBackColor = false;
@@ -79,10 +77,9 @@
             // 
             button2.BackColor = Color.FromArgb(192, 255, 255);
             button2.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(525, 11);
-            button2.Margin = new Padding(3, 2, 3, 2);
+            button2.Location = new Point(600, 15);
             button2.Name = "button2";
-            button2.Size = new Size(186, 62);
+            button2.Size = new Size(213, 83);
             button2.TabIndex = 2;
             button2.Text = "Отваряне форма за двигател";
             button2.UseVisualStyleBackColor = false;
@@ -92,12 +89,11 @@
             // 
             textBox2.BackColor = Color.FromArgb(192, 255, 255);
             textBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox2.Location = new Point(15, 284);
-            textBox2.Margin = new Padding(3, 2, 3, 2);
+            textBox2.Location = new Point(17, 379);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
-            textBox2.Size = new Size(713, 46);
+            textBox2.Size = new Size(814, 60);
             textBox2.TabIndex = 3;
             textBox2.Text = "1. Сканирайте баркода от Монтажния Лист(Монтажна  Карта) или етикет със Серийния Номер на изделието!";
             textBox2.TextChanged += textBox2_TextChanged;
@@ -106,76 +102,68 @@
             // 
             textBox4.BackColor = Color.Cyan;
             textBox4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox4.Location = new Point(15, 396);
-            textBox4.Margin = new Padding(3, 2, 3, 2);
+            textBox4.Location = new Point(17, 528);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.ReadOnly = true;
-            textBox4.Size = new Size(713, 41);
+            textBox4.Size = new Size(814, 53);
             textBox4.TabIndex = 5;
             textBox4.Text = "3. Изберете месец и година на производство на двигателя. Потвърдете с бутона ОК!";
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(525, 88);
-            textBox5.Margin = new Padding(3, 2, 3, 2);
+            textBox5.Location = new Point(600, 117);
             textBox5.Multiline = true;
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(133, 29);
+            textBox5.Size = new Size(151, 37);
             textBox5.TabIndex = 6;
             // 
             // productCode
             // 
-            productCode.Location = new Point(12, 151);
-            productCode.Margin = new Padding(3, 2, 3, 2);
+            productCode.Location = new Point(14, 201);
             productCode.Multiline = true;
             productCode.Name = "productCode";
-            productCode.Size = new Size(132, 29);
+            productCode.Size = new Size(150, 37);
             productCode.TabIndex = 7;
             // 
             // productDescription
             // 
-            productDescription.Location = new Point(167, 151);
-            productDescription.Margin = new Padding(3, 2, 3, 2);
+            productDescription.Location = new Point(191, 201);
             productDescription.Multiline = true;
             productDescription.Name = "productDescription";
-            productDescription.Size = new Size(325, 29);
+            productDescription.Size = new Size(371, 37);
             productDescription.TabIndex = 8;
             // 
             // compSerNum
             // 
-            compSerNum.Location = new Point(31, 237);
-            compSerNum.Margin = new Padding(3, 2, 3, 2);
+            compSerNum.Location = new Point(35, 316);
             compSerNum.Multiline = true;
             compSerNum.Name = "compSerNum";
-            compSerNum.Size = new Size(141, 26);
+            compSerNum.Size = new Size(161, 33);
             compSerNum.TabIndex = 9;
             // 
             // compSerNumCode
             // 
-            compSerNumCode.Location = new Point(243, 237);
-            compSerNumCode.Margin = new Padding(3, 2, 3, 2);
+            compSerNumCode.Location = new Point(278, 316);
             compSerNumCode.Multiline = true;
             compSerNumCode.Name = "compSerNumCode";
-            compSerNumCode.Size = new Size(141, 26);
+            compSerNumCode.Size = new Size(161, 33);
             compSerNumCode.TabIndex = 10;
             // 
             // componentDescription
             // 
-            componentDescription.Location = new Point(430, 237);
-            componentDescription.Margin = new Padding(3, 2, 3, 2);
+            componentDescription.Location = new Point(491, 316);
             componentDescription.Multiline = true;
             componentDescription.Name = "componentDescription";
-            componentDescription.Size = new Size(295, 26);
+            componentDescription.Size = new Size(337, 33);
             componentDescription.TabIndex = 11;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(550, 151);
-            textBox6.Margin = new Padding(3, 2, 3, 2);
+            textBox6.Location = new Point(629, 201);
             textBox6.Multiline = true;
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(143, 29);
+            textBox6.Size = new Size(163, 37);
             textBox6.TabIndex = 12;
             textBox6.TextChanged += textBox6_TextChanged;
             // 
@@ -183,12 +171,11 @@
             // 
             textBox3.BackColor = Color.FromArgb(128, 255, 255);
             textBox3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox3.Location = new Point(15, 334);
-            textBox3.Margin = new Padding(3, 2, 3, 2);
+            textBox3.Location = new Point(17, 445);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.ReadOnly = true;
-            textBox3.Size = new Size(713, 58);
+            textBox3.Size = new Size(814, 76);
             textBox3.TabIndex = 4;
             textBox3.Text = "2. Сканирайте баркода със Серийния Номер от етикета на двигателя или го въведете ръчно и натиснете ENTER! За повторно сканиране Сер. Номер на двигател първо нулиране с бутона горе и отново т.2.";
             // 
@@ -196,9 +183,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(319, 88);
+            label1.Location = new Point(338, 117);
             label1.Name = "label1";
-            label1.Size = new Size(200, 21);
+            label1.Size = new Size(256, 28);
             label1.TabIndex = 13;
             label1.Text = "Сериен номер на продукт:";
             // 
@@ -206,9 +193,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(15, 128);
+            label2.Location = new Point(17, 171);
             label2.Name = "label2";
-            label2.Size = new Size(129, 21);
+            label2.Size = new Size(164, 28);
             label2.TabIndex = 14;
             label2.Text = "Код на продукта";
             // 
@@ -216,9 +203,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(243, 128);
+            label3.Location = new Point(278, 171);
             label3.Name = "label3";
-            label3.Size = new Size(173, 21);
+            label3.Size = new Size(221, 28);
             label3.TabIndex = 15;
             label3.Text = "Описание на продукта";
             // 
@@ -226,9 +213,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(541, 128);
+            label4.Location = new Point(618, 171);
             label4.Name = "label4";
-            label4.Size = new Size(170, 21);
+            label4.Size = new Size(218, 28);
             label4.TabIndex = 16;
             label4.Text = "Модел на компонента";
             // 
@@ -236,9 +223,9 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(42, 193);
+            label5.Location = new Point(48, 257);
             label5.Name = "label5";
-            label5.Size = new Size(118, 42);
+            label5.Size = new Size(151, 56);
             label5.TabIndex = 17;
             label5.Text = "Сериен номер \r\nна компонента";
             // 
@@ -246,9 +233,9 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(233, 193);
+            label6.Location = new Point(266, 257);
             label6.Name = "label6";
-            label6.Size = new Size(166, 42);
+            label6.Size = new Size(214, 56);
             label6.TabIndex = 18;
             label6.Text = "Код на сериен номер \r\nна компонента";
             // 
@@ -256,17 +243,17 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(486, 214);
+            label7.Location = new Point(555, 285);
             label7.Name = "label7";
-            label7.Size = new Size(193, 21);
+            label7.Size = new Size(248, 28);
             label7.TabIndex = 19;
             label7.Text = "Описание на компонента";
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(737, 448);
+            ClientSize = new Size(842, 597);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -288,7 +275,6 @@
             Controls.Add(button1);
             Controls.Add(textBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Form2";
             Text = "Form2";
             Load += Form2_Load;
