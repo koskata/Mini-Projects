@@ -1,46 +1,40 @@
 #include <iostream>
 #include <vector>
-#include <algorithm> // За функцията max
+#include <algorithm>
 
 using namespace std;
 
 int main() {
-    int m, n;
+	int m, n;
 
-    // Въвеждане на размерите на двумерния масив
-    cout << "Enter the number of rows (m): ";
-    cin >> m;
-    cout << "Enter the number of cols (n): ";
-    cin >> n;
+	cout << "Enter the number of rows (m): ";
+	cin >> m;
+	cout << "Enter the number of cols (n): ";
+	cin >> n;
 
-    // Деклариране на двумерен масив
-    vector<vector<int>> A(m, vector<int>(n));
+	vector<vector<int>> A(m, vector<int>(n));
 
-    // Въвеждане на елементите на масива
-    cout << "Въведете елементите на масива:" << endl;
-    for (int i = 0; i < m; ++i) {
-        for (int j = 0; j < n; ++j) {
-            cin >> A[i][j];
-        }
-    }
+	cout << "Enter the elements of array:" << endl;
+	for (int i = 0; i < m; ++i) {
+		for (int j = 0; j < n; ++j) {
+			cin >> A[i][j];
+		}
+	}
 
-    // Създаване на масива b
-    vector<int> b(m);
+	vector<int> b(m);
 
-    for (int i = 0; i < m; ++i) {
-        // Намерете максималния елемент в реда
-        b[i] = A[i][0]; // Инициализираме с първия елемент
-        for (int j = 1; j < n; ++j) {
-            b[i] = max(b[i], A[i][j]); // Обновяваме максимума
-        }
-    }
+	for (int i = 0; i < m; ++i) {
+		b[i] = A[i][0];
+		for (int j = 1; j < n; ++j) {
+			b[i] = max(b[i], A[i][j]);
+		}
+	}
 
-    // Отпечатване на резултата
-    cout << "Масивът b със стойностите на максимумите е: ";
-    for (int i = 0; i < m; ++i) {
-        cout << b[i] << " ";
-    }
-    cout << endl;
+	cout << "----------------------\n";
+	cout << "Maximum elements of each row are: " << endl;
+	for (int i = 0; i < m; ++i) {
+		cout << "Maximal value of row " << i + 1 << ": " << b[i] << endl;
+	}
 
-    return 0;
+	return 0;
 }

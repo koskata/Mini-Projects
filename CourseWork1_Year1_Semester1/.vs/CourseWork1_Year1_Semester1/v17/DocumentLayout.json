@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\CourseAssignments-UniRuse\\CourseWork1_Year1_Semester1\\",
+  "WorkspaceRootPath": "D:\\\u0421\u043E\u0444\u0442\u0423\u043D\u0438\\Mini-Projects\\CourseWork1_Year1_Semester1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9280B6D-CD5F-4C7C-8EC2-1019112EF81F}|CourseWork1_Year1_Semester1\\CourseWork1_Year1_Semester1.vcxproj|D:\\CourseAssignments-UniRuse\\CourseWork1_Year1_Semester1\\CourseWork1_Year1_Semester1\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E9280B6D-CD5F-4C7C-8EC2-1019112EF81F}|CourseWork1_Year1_Semester1\\CourseWork1_Year1_Semester1.vcxproj|D:\\\u0421\u043E\u0444\u0442\u0423\u043D\u0438\\Mini-Projects\\CourseWork1_Year1_Semester1\\CourseWork1_Year1_Semester1\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E9280B6D-CD5F-4C7C-8EC2-1019112EF81F}|CourseWork1_Year1_Semester1\\CourseWork1_Year1_Semester1.vcxproj|solutionrelative:CourseWork1_Year1_Semester1\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -36,11 +36,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Main.cpp",
-              "DocumentMoniker": "D:\\CourseAssignments-UniRuse\\CourseWork1_Year1_Semester1\\CourseWork1_Year1_Semester1\\Main.cpp",
+              "DocumentMoniker": "D:\\\u0421\u043E\u0444\u0442\u0423\u043D\u0438\\Mini-Projects\\CourseWork1_Year1_Semester1\\CourseWork1_Year1_Semester1\\Main.cpp",
               "RelativeDocumentMoniker": "CourseWork1_Year1_Semester1\\Main.cpp",
-              "ToolTip": "D:\\CourseAssignments-UniRuse\\CourseWork1_Year1_Semester1\\CourseWork1_Year1_Semester1\\Main.cpp",
+              "ToolTip": "D:\\\u0421\u043E\u0444\u0442\u0423\u043D\u0438\\Mini-Projects\\CourseWork1_Year1_Semester1\\CourseWork1_Year1_Semester1\\Main.cpp",
               "RelativeToolTip": "CourseWork1_Year1_Semester1\\Main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAtAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-26T12:16:05.756Z",
               "EditorCaption": ""
