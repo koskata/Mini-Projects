@@ -1,2 +1,3 @@
 ﻿  CourseWork2_Year1_Semester1.cpp
+D:\СофтУни\Mini-Projects\CourseWork2_Year1_Semester1\CourseWork2_Year1_Semester1\CourseWork2_Year1_Semester1\CourseWork2_Year1_Semester1.cpp(89,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
   CourseWork2_Year1_Semester1.vcxproj -> D:\СофтУни\Mini-Projects\CourseWork2_Year1_Semester1\CourseWork2_Year1_Semester1\x64\Debug\CourseWork2_Year1_Semester1.exe

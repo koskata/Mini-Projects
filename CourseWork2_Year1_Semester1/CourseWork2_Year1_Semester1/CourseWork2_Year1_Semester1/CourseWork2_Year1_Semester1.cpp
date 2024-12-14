@@ -1,120 +1,131 @@
-﻿#include <iostream>
-#include <fstream>
-#include <vector>
-#include <string>
-#include <iomanip>
+﻿#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
-using namespace std;
+const int MAX_STUDENTS = 100;
+const int DISCIPLINES = 10;
 
 struct Student {
-    string name;
-    string facultyNumber;
-    string egn; // Добавено поле за ЕГН
-    double grades[10];
-    double average;
+    char name[50];
+    char EGN[11];
+    int facNumber;
+    float grades[DISCIPLINES];
+    float averageGrade;
 };
 
-void createFile() {
-    ofstream outFile("students.txt");
-    if (!outFile) {
-        cerr << "Cannot create the file!" << endl;
+void createStudentFile(Student students[], int* count) {
+    printf("Enter number of students: ");
+    scanf_s("%d", count);
+
+    FILE* file;
+    fopen_s(&file, "students.txt", "w");
+    if (!file) {
+        printf("Error creating file!\n");
         return;
     }
-    outFile.close();
-    cout << "File created successfully!" << endl;
+
+    for (int i = 0; i < *count; i++) {
+        printf("Enter name for student %d: ", i + 1);
+        scanf_s(" %[^\n]s", students[i].name, (unsigned)sizeof(students[i].name));
+
+        printf("Enter EGN for student %d: ", i + 1);
+        scanf_s("%s", students[i].EGN, (unsigned)sizeof(students[i].EGN));
+
+        printf("Enter faculty number for student %d: ", i + 1);
+        scanf_s("%d", &students[i].facNumber);
+
+        printf("Enter grades for %d disciplines for student %d:\n", DISCIPLINES, i + 1);
+        for (int j = 0; j < DISCIPLINES; j++) {
+            printf("Grade %d: ", j + 1);
+            scanf_s("%f", &students[i].grades[j]);
+        }
+
+        fprintf(file, "%s %s %d ", students[i].name, students[i].EGN, students[i].facNumber);
+        for (int j = 0; j < DISCIPLINES; j++) {
+            fprintf(file, "%.2f ", students[i].grades[j]);
+        }
+        fprintf(file, "\n");
+    }
+    fclose(file);
+    printf("File 'students.txt' created successfully.\n");
 }
 
-void recordNewStudents() {
-    vector<Student> students;
-    int numStudents;
-    cout << "Enter the number of students to record: ";
-    cin >> numStudents;
-    students.resize(numStudents);
 
-    for (int i = 0; i < numStudents; ++i) {
-        cout << "Enter the name of student " << i + 1 << ": ";
-        cin >> students[i].name;
-        cout << "Enter the Faculty Number of student " << i + 1 << ": ";
-        cin >> students[i].facultyNumber;
-        cout << "Enter the EGN of student " << i + 1 << ": "; // Въведете ЕГН
-        cin >> students[i].egn;
-
-        cout << "Enter the grades for 10 subjects: ";
-        double sum = 0;
-        for (int j = 0; j < 10; ++j) {
-            cin >> students[i].grades[j];
+void calculateAverageGrade(Student students[], int count) {
+    for (int i = 0; i < count; i++) {
+        float sum = 0;
+        for (int j = 0; j < DISCIPLINES; j++) {
             sum += students[i].grades[j];
         }
-        students[i].average = sum / 10;
+        students[i].averageGrade = sum / DISCIPLINES;
     }
 
-    ofstream outFile("students.txt", ios::app);
-    if (!outFile) {
-        cerr << "Cannot open the file for writing!" << endl;
-        return;
+    printf("\nAverage grades for all students:\n");
+    for (int i = 0; i < count; i++) {
+        printf("Name: %s, Average Grade: %.2f\n", students[i].name, students[i].averageGrade);
     }
-
-    for (const auto& student : students) {
-        outFile << student.name << " "
-            << student.facultyNumber << " "
-            << student.egn << " " // Записване на ЕГН
-            << student.average << endl;
-    }
-
-    outFile.close();
-    cout << "Students recorded successfully!" << endl;
 }
 
-void displayFemaleStudents() {
-    ifstream inFile("students.txt");
-    if (!inFile) {
-        cerr << "Cannot open the file!" << endl;
-        return;
-    }
+void displayFemaleStudents(Student students[], int count) {
+    printf("\nFemale students:\n");
+    bool found = false;
 
-    string name, facultyNumber, egn; // Добавено поле за ЕГН
-    double average;
-    cout << fixed << setprecision(2);
-    while (inFile >> name >> facultyNumber >> egn >> average) { // Четене на ЕГН
-        if (name.back() == 'a' || name.back() == 'e') { // Прост проверка за женски имена
-            
+    for (int i = 0; i < count; i++) {
+        int genderDigit = students[i].EGN[8] - '0';
+
+        if (genderDigit % 2 != 0) {
+            printf("Name: %s, Faculty Number: %d, Average Grade: %.2f\n",
+                students[i].name, students[i].facNumber, students[i].averageGrade);
+            found = true;
         }
-        cout << "Faculty Number: " << facultyNumber
-            << ", EGN: " << egn // Извеждане на ЕГН
-            << ", Average Grade: " << average << endl;
     }
 
-    inFile.close();
+    if (!found) {
+        printf("No female students found.\n");
+    }
 }
 
-int main() {
+// Основната програма
+void main() {
+    Student students[MAX_STUDENTS];
+    int count = 0;
     int choice;
+
     do {
-        cout << "\nMenu:\n";
-        cout << "1. Create file\n";
-        cout << "2. Record new students\n";
-        cout << "3. Display female students' faculty numbers, EGN, and average grades\n";
-        cout << "4. Exit\n";
-        cout << "Enter your choice: ";
-        cin >> choice;
+        printf("\nMenu:\n");
+        printf("1. Create student file\n");
+        printf("2. Calculate and display average grades\n");
+        printf("3. Display women students\n");
+        printf("4. Exit\n");
+        printf("Enter your choice: ");
+        scanf_s("%d", &choice);
 
         switch (choice) {
         case 1:
-            createFile();
+            createStudentFile(students, &count);
             break;
         case 2:
-            recordNewStudents();
+            if (count > 0) {
+                calculateAverageGrade(students, count);
+            }
+            else {
+                printf("No students available. Please create a student file first.\n");
+            }
             break;
         case 3:
-            displayFemaleStudents();
+            if (count > 0) {
+                calculateAverageGrade(students, count);
+                displayFemaleStudents(students, count);
+            }
+            else {
+                printf("No students available. Please create a student file first.\n");
+            }
             break;
         case 4:
-            cout << "Exiting the program." << endl;
+            printf("Exiting program.\n");
             break;
         default:
-            cout << "Invalid choice! Please try again." << endl;
+            printf("Invalid choice. Please try again.\n");
         }
     } while (choice != 4);
-
-    return 0;
 }
