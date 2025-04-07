@@ -1,0 +1,16 @@
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\bin\Debug\net8.0-windows\ConverterAppWinForms.exe
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\bin\Debug\net8.0-windows\ConverterAppWinForms.deps.json
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\bin\Debug\net8.0-windows\ConverterAppWinForms.runtimeconfig.json
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\bin\Debug\net8.0-windows\ConverterAppWinForms.dll
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\bin\Debug\net8.0-windows\ConverterAppWinForms.pdb
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\obj\Debug\net8.0-windows\ConverterAppWinForms.Form1.resources
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\obj\Debug\net8.0-windows\ConverterAppWinForms.csproj.GenerateResource.cache
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\obj\Debug\net8.0-windows\ConverterAppWinForms.GeneratedMSBuildEditorConfig.editorconfig
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\obj\Debug\net8.0-windows\ConverterAppWinForms.AssemblyInfoInputs.cache
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\obj\Debug\net8.0-windows\ConverterAppWinForms.AssemblyInfo.cs
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\obj\Debug\net8.0-windows\ConverterAppWinForms.csproj.CoreCompileInputs.cache
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\obj\Debug\net8.0-windows\ConverterAppWinForms.dll
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\obj\Debug\net8.0-windows\refint\ConverterAppWinForms.dll
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\obj\Debug\net8.0-windows\ConverterAppWinForms.pdb
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\obj\Debug\net8.0-windows\ConverterAppWinForms.genruntimeconfig.cache
+D:\Даниел Стоянов (Зайко) - Дипломен Проект 2025\ConverterAppWinForms\ConverterAppWinForms\obj\Debug\net8.0-windows\ref\ConverterAppWinForms.dll
