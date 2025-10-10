@@ -5,20 +5,23 @@ using namespace std;
 int main()
 {
     struct st {
-        char s[5];
+        string s;
         int i;
     };
 
-    typedef st* x;
+    typedef st* PST;
 
-    x P;
-    st Z;
+    PST P1, P2;
 
-    P = new st;
-    strcpy_s(P->s, "a12");
-    P->i = 1;
-    strcpy_s(Z.s, "b34");
-    Z.i = 10;
+    P1 = new st;
+    P1->s = "a1";
+    P1->i = 1;
+
+    P2 = new st;
+    P2->s = "a1";
+    P2->i = 1;
+
+    cout << P1->s[1];
 
     //cout << P; // грешка
     //cout << P->s[0]; // успешно = "а"
@@ -30,6 +33,16 @@ int main()
 
 int main()
 {
+    //2.1
+
+    // а) L->next->next=P - невярно
+    // б) Q->next='/'; - вярно
+    // в) P->next=9; - невярно
+    // г) L->next->info=3 - вярно
+
+
+
+
     //2.2 Двусвързани списъци
 
     //a)
@@ -49,6 +62,8 @@ int main()
     //      => Q->info = Q->prev->info
 
     // --> |w|<=>|e|<=>|e|<=>|x|
+
+
 
 
     //2.3 Дълга задача - 15т.
