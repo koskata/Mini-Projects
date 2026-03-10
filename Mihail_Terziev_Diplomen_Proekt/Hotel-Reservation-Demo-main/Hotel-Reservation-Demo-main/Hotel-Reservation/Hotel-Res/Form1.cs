@@ -23,7 +23,7 @@ namespace Hotel_Reservations
                 if (reader.EndOfStream == true)
                 {
                     Room roomToAdd;
-                    for (int i = 1; i <= 30; i++)
+                    for (int i = 1; i <= 30; i++)               
                     {
                         if (i % 2 == 0)
                         {
